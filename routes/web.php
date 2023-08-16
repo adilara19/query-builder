@@ -144,6 +144,18 @@ Route::get('/',function(){
     return dump($users);           //*dump ile hata ayıklama işlemlerini daha kolay bir şekilde yapabiliriz.
     */
 
+    /*
+    $users = DB::table('users')
+    ->orderBy('id','asc') //*orderBy asc ile verileri baştan sona listeleyebiliriz.
+    ->get();
+    */
+
+    /*
+    $users = DB::table('users')
+    ->orderBy('id','desc') //*orderBy desc ile verileri sondan başa listeleyebiliriz.
+    ->get();
+    */
+
 
 
 });
