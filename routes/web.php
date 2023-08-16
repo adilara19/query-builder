@@ -121,6 +121,15 @@ Route::get('/',function(){
     return $users;
     */
 
+    /*
+    $users = DB::table('users')
+    ->whereNot('point','>', 600) //*whereNot ile aradığımız kriterlerde olmayanları sorgularız.
+    ->get();
+
+    return $users;
+    }) 
+    */
+
 
 
 });
