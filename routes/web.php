@@ -45,4 +45,25 @@ Route::get('/',function(){
     return $users;
     */
 
+    /*
+    $users = DB::table('users')->count(); //*count ile bir tablodaki satır sayılarını görebiliriz.
+    return $users;
+    */
+
+    /*
+    $users = DB::table('users')->min('point'); //*min ile bir tablodaki aranılan alanda(yani point alanında) bulunan minimum değeri görebiliriz.
+    return $users;
+    */
+
+    /*
+    $users = DB::table('users')->max('point'); //*max ile bir tablodaki aranılan alanda(yani point alanında) bulunan maximum değeri görebiliriz.
+    return $users;
+    */
+
+    /*
+    $users = DB::table('users')->sum('point'); //*sum ile bir tablodaki aranılan alanda(yani point alanında) bulunan bütün değerlerin toplamın değerini görebiliriz.
+    return $users;
+    */
+
+
 });
