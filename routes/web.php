@@ -130,6 +130,20 @@ Route::get('/',function(){
     }) 
     */
 
+    /*
+    $users = DB::table('users')
+           ->where('point','>',50)
+           ->get();
+    return dd($users);           //*dd ile hata ayıklama işlemlerini daha kolay bir şekilde yapabiliriz.
+    */
+
+    /*
+    $users = DB::table('users')
+           ->where('point','>',50)
+           ->get();
+    return dump($users);           //*dump ile hata ayıklama işlemlerini daha kolay bir şekilde yapabiliriz.
+    */
+
 
 
 });
