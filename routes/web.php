@@ -97,6 +97,28 @@ Route::get('/',function(){
     ])
     ->get();
 
+    return $users;
+    */
+
+    /*
+    $users = DB::table('users')
+    ->where('point','>', 600)
+    ->orWhere('name','Ayşe Dilara Öztürk') //*orWhere ile öncesinde oluşturduğumuz sorgu çalışmazsa, çalışacak başka bir sorgu oluşturabiliriz.
+    ->get();
+
+    return $users;
+    */
+
+    /*
+    $users = DB::table('users')
+    ->where('point','>', 600)
+    ->orWhere(function($query){            //*orWhere sorgusu içine where ekleyebiliyoruz ve sorguları bu şekilde de yazabiliriz.
+        $query->where('name', 'Ayşe Dilara Öztürk')
+              ->where('age', '>', 25);  
+    }) 
+    ->get();
+
+    return $users;
     */
 
 
