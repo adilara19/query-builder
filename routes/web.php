@@ -168,6 +168,14 @@ Route::get('/',function(){
     ->first();
     */
 
+    /*
+    $users = DB::table('users')
+    ->inRandomOrder() //*inRandomOrder ile random bir şekilde verileri listeleyebiliriz.
+    ->get();
+
+    return $users;
+    */
+
 
 
 });
