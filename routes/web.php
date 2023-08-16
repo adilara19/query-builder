@@ -65,5 +65,40 @@ Route::get('/',function(){
     return $users;
     */
 
+    /*
+    $users = DB::table('users')
+    ->select(DB::raw('count(*) as user_count, status')) //*raw ile sorgu içerisine almak istediğimiz alanı belirliyoruz. raw ve groupBy birlikte kullanılır.
+    ->where('status', '=',1)
+    ->groupBy('status')
+    ->get();
+
+    return $users
+    */
+    
+    /*
+    $users = DB::table('users')
+    ->where('point','=','150') //*where ile sorgu yaratıp aradığımız alanı bulabiliriz.
+    ->where('age','>', 20)
+    ->get();
+    */
+
+    /*
+    $users = DB::table('users')
+    ->where('name','like','%Ayşe%') //*like ile sorgu yaratıp aradığımız alanı bulabiliriz.
+    ->get();
+    */
+
+    /*
+    $user = DB::table('users')
+    ->where([                       //*where sorgusunu bu şekilde birden fazla array tanımlayarak da yapabiliriz.
+        ['point', '=', 250]
+        ['age', '=', 40]
+        ['name','like','%Helen%]
+    ])
+    ->get();
+
+    */
+
+
 
 });
