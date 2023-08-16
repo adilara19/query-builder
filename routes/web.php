@@ -156,6 +156,18 @@ Route::get('/',function(){
     ->get();
     */
 
+    /*
+    $users = DB::table('users')
+    ->latest() //*latest first ile en yeni veriyi listeleyebiliriz.
+    ->first();
+    */
+
+    /*
+    $users = DB::table('users')
+    ->oldest() //*oldest first ile en eski veriyi listeleyebiliriz.
+    ->first();
+    */
+
 
 
 });
